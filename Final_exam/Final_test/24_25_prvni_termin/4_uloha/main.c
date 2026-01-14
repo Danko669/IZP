@@ -9,9 +9,9 @@ Upravte následující funkci tak, aby zobrazila všechny prvky nad vedlejší d
 
 void printAboveSideDiag(int n, int array[n][n]) // parametr n je řád matice
 {
-    for (int row = ________; ________________; row++)
+    for (int row = 0; row<n-1; row++)
     {
-        for (int col = ________; ________________; col++)
+        for (int col = 0; col<n-1-row; col++)
         {
             printf("%d ", array[row][col]);
         }
