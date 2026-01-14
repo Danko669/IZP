@@ -14,7 +14,13 @@ zavorky(0) nevypíše nic
 
 void zavorky(unsigned n)
 {
-    
+    if(n==0) return;
+    else if(n>0)
+    {
+        printf("(");
+        zavorky(n-1);
+        printf(")");
+    }
 }
 
 int main() {
