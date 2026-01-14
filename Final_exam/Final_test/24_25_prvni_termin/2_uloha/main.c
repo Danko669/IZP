@@ -17,12 +17,12 @@ void insertArray(int arr1[], unsigned len1, int arr2[], unsigned len2, unsigned 
 {
     for (int i = len1 - 1; i >= idx; i--)
     {
-        arr1[ ________ ] = arr1[ ________ ];
+        arr1[len2+i] = arr1[i];
     }
 
     for (int i = 0; i < len2; i++)
     {
-        arr1[ ________ ] = arr2[ ________ ];
+        arr1[idx+i] = arr2[i];
     }
 }
 
